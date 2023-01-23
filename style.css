@@ -1,0 +1,75 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#team {
+    background: #eee !important;
+    height: '100%';
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+section {
+    padding: 30px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.frontside {
+    /* position: relative; */
+    /* -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg); */
+    /* z-index: 2; */
+    margin-bottom: 30px;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.frontside .card .card-title
+{
+    color: #2d7b00 !important;
+}
+
+.frontside .card .card-title-red {
+    color: #db2424 !important;
+}
+
+.frontside .card .card-title-red {
+    color: #ff0000 !important;
+}
+
+.frontside .card .card-title-BH {
+    color: red !important;
+}
+
+.frontside .card .card-title-yellow {
+    color: #f39529 !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20%;
+}
