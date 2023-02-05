@@ -1,3 +1,5 @@
+import auth from './env.json' assert {type: 'json'};
+
 export const Api = () => {
   let data = {
     baseURL: "https://api.intra.42.fr/",
@@ -14,8 +16,8 @@ export const generateToken = async () => {
   return new Promise((resolve) => {
     const credentials = {
       grant_type: "client_credentials",
-      client_id: CLIENT_ID,
-      client_secret: CLIENT_SECRET,
+      client_id: auth.CLIENT_ID,
+      client_secret: auth.CLIENT_SECRET,
     };
 
     Api()
