@@ -10,6 +10,7 @@ export const dateStirng = [
 	"2019-10-09T07:37:00.000Z,2019-10-12T00:00:00.000Z",
 	"2021-11-01T08:00:00.000Z,2021-11-10T00:00:00.000Z",
 	"2022-10-01T00:00:00.000Z,2022-10-29T00:00:00.000Z",
+	"2022-09-01T00:00:00.000Z,2022-09-29T08:00:00.000Z",
 ];
 
 // `/v2/cursus/9/cursus_users?&filter[campus_id]=16&range[begin_at]=2022-06-06T08:37:00.000Z,2022-07-02T08:37:00.000Z&page=${page}&per_page=100`
@@ -83,6 +84,9 @@ export const doIt = async (pos) => {
 			break;
 		case 8:
 			data = await loop(3, 7, 21);
+			break;
+		case 9:
+			data = await loop(3, 8, 55);
 			break;
 		default:
 			console.log(`Error.`);

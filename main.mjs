@@ -26,8 +26,21 @@ export const main = async (pos) => {
 	}
 };
 
+export const selectMED = () => {
+	document.getElementById("BG").value = 0;
+	document.getElementById("KH").value = 0;
+	let x = document.getElementById("MED").value;
+	switch (x) {
+		case '1':
+			main(9); break;
+		default:
+			console.log("default", x); break;
+	}
+};
+
 export const selectKH = () => {
 	document.getElementById("BG").value = 0;
+	document.getElementById("MED").value = 0;
 	let x = document.getElementById("KH").value;
 	switch (x) {
 		case '1':
@@ -47,6 +60,7 @@ export const selectKH = () => {
 
 export const selectBG = () =>{
 	document.getElementById("KH").value = 0;
+	document.getElementById("MED").value = 0;
 	let x = document.getElementById("BG").value;
 	switch (x) {
 		case '1':
@@ -97,3 +111,4 @@ export const loadProducts =(users) =>{
 window.loadProducts = loadProducts();
 document.querySelector("#KH").addEventListener("change", () => selectKH());
 document.querySelector("#BG").addEventListener("change", () => selectBG());
+document.querySelector("#MED").addEventListener("change", () => selectMED());
